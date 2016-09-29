@@ -8,4 +8,4 @@ const Schema = mongoose.Schema,
     });
 
 UserSchema.plugin(passportLocalMongoose);
-module.exports = mongoose.model('UserSchema', UserSchema);
+export default mongoose.model('UserSchema', UserSchema);
