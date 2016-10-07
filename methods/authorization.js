@@ -26,3 +26,7 @@ export function loginUser(req, res) {
         req.session.user = JSON.stringify(req.user);
         res.json(req.user);
 }
+
+export function logout(req, res) {
+    res.json({message: "Success", ok: 'ok'});
+}
